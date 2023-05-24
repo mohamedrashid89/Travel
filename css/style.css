@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.image{
+    width: 100%;
+    height: 100vh;
+    background-image: url(maldives.jpg);
+    background-size: cover;
+    background-position: center;
+    opacity: 01;
+}
+.navbar{
+    padding: 50px;
+    /* display: flex; */
+}
+.navbar a{ 
+    position: relative;
+    left: 25rem;
+    margin: 30px;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: sans-serif;
+    text-decoration: none;
+    color: #000000;
+    position: relative;
+    z-index: 2;
+}
+.navbar a::before{
+    content: "";
+    width: 0%;
+    height: 110%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 20px;
+    background-color: #ff9901;
+    z-index: -3;
+    transition: 0.5s;
+}
+.navbar a:hover::before{
+    width: 130%;
+}
+.ptext{
+    font-size: 40px;
+    font-family:  sans-serif;
+    font-weight: 700;
+    text-align: center;
+    color: white;
+    /* background-color: #00050573;
+    align-self: flex-start;
+     */
+
+    position: relative;
+    top: 150px;
+}
